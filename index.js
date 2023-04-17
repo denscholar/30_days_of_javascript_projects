@@ -1,26 +1,21 @@
-// COUNNTER PROJECT
+// Checkedbox PROJECT
 
-const dec = document.getElementById('decrease')
-const reset = document.getElementById('reset')
-const inc = document.getElementById('increase')
-const zeroLabel = document.getElementById('label')
+const checkBox = document.getElementById('check-box')
+const response = document.getElementById('response')
+const submit = document.getElementById('submit-button')
 
-// console.log(zeroLabel);
-// console.log(dec);
+console.log(response);
 
-let count = 0; // the current value of the result
 
-dec.addEventListener('click', ()=>{
-    count -= 1;
-    zeroLabel.innerHTML = count;
+submit.addEventListener('click', ()=>{
+    if (checkBox.checked) {
+        response.innerHTML = 'Congratulations! You have subscribed'
+        response.style.color = 'blue'
+        response.style.fontSize = '2.5rem'
+    }else{
+        response.innerHTML = 'Sorry, you have not subscribed'
+        response.style.color = 'red'
+        response.style.fontSize = '1.5rem'
+    }
 })
 
-reset.addEventListener('click', ()=>{
-    count = 0;
-    zeroLabel.innerHTML = count;
-})
-
-inc.addEventListener('click', ()=>{
-    count += 1;
-    zeroLabel.innerHTML = count;
-})

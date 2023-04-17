@@ -10,35 +10,39 @@
     width: 20rem;
     
 }
-.container .buttons{
+.container .paragraph{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .check-box-container{
     display: flex;
     justify-content: center;
-    flex: row;
-    gap: 20px;
-    margin-top: 35px;    
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.container .zero{
-    font-size: 3rem;
-    font-weight: bolder;
+.container .check-box-container input{
+    width: 2rem;
+    height: 2rem;
 }
-.container .buttons button{
-    padding: 15px;
-    border: 1px solid rgb(227, 226, 226);   
-    font-size: 1rem;
+
+.container .check-box-container label{
+    font-size: 0.8rem;
     font-weight: bold;
-    width: 15rem;
-    cursor: pointer;
 }
 
-.container .buttons #decrease{
-    background: red;
-    color: white;
-    border-radius: 3px;
-}
-
-.container .buttons #increase{
+.button #submit-button{
     background: green;
+    margin-top: 10px;
     color: white;
-    border-radius: 3px;
+    outline: none;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+
 }
